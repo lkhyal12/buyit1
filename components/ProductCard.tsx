@@ -36,7 +36,7 @@ const ProductCard = ({ product }: Props) => {
               </p>
             )}
             {price && price.unit_amount && (
-              <p className="text-lg font-semibold text-gray-900">
+              <p className="text-lg mt-1 font-semibold text-gray-900">
                 ${(price.unit_amount / 100).toFixed(2)}
               </p>
             )}
