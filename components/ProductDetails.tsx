@@ -24,13 +24,13 @@ const ProductDetails = ({ product }: { product: Stripe.Product }) => {
   return (
     <div className="conatainer mx-auto px-4 py-8 flex flex-col md:flex-row gap-8 items-center">
       {product.images && product.images[0] && (
-        <div className="relative h-96 w-full md:w-1/2 rounded-lg overflow-hidden">
+        <div className="relative h-96 w-full md:w-1/2 rounded-lg overflow-hidden ">
           <Image
             src={product.images[0]}
             alt={product.name}
             layout="fill"
-            objectFit="cover"
-            className="transition duration-300 hover:opacity-90"
+            objectFit="contain"
+            className="transition duration-300 hover:opacity-90 "
           />
         </div>
       )}
